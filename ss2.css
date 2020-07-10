@@ -1,0 +1,159 @@
+*{
+    color: yellow;
+    background: black;
+    box-sizing: border-box;
+}
+footer
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border: 1px white solid;
+    clear: both;
+}
+
+
+.headerArea
+{
+    grid-area: headerArea;
+    border: 1px hotpink solid;
+}
+.mainArea
+{
+    grid-area: mainArea;
+    border: 1px firebrick solid;
+}
+.footerArea
+{
+    grid-area: footerArea;
+    border: 1px orange solid;
+}
+.bodygrid
+{
+    height: 98vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 7fr 2fr;
+    grid-gap: 0px;
+    grid-template-areas:
+            "headerArea"
+            "mainArea"
+            "footerArea";
+}
+.box1
+{
+    flex: 1;
+    border: 1px white solid;
+    margin: 10px;
+}
+.box2
+{
+    flex: 3;
+    border: 1px white solid;
+    margin: 10px;
+}
+
+.grid-container2 {
+    display: grid;
+    width: 33.3%;
+    height: 100%;
+    float: left;
+    /*grid-column-gap: 50px;
+    grid-row-gap: 20px;*/
+    border: 1px gray solid;
+}
+.grid-container3 {
+    display: grid;
+    width: 6.66667%;
+    height: 100%;
+    float: left;
+    border: 1px gray solid;
+}
+.headerRow {
+    display: flex;
+    text-align: center;
+}
+.main
+{
+    border: 10px firebrick solid;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+.column{
+    flex: 10%;
+    max-width: 10%;
+}
+/*GRIDS*/
+.item-b {
+    grid-area: main;
+    border: 1px greenyellow solid;
+}
+.item-b img
+{
+    width: 100%;
+    height: 100%;
+}
+.item-symbol1 {
+    grid-area: symbol1;
+    border: 1px darkolivegreen solid;
+}
+.item-symbol2 {
+    grid-area: symbol2;
+    border: 1px darkolivegreen solid;
+}
+.item-symbol3 {
+    grid-area: symbol3;
+    border: 1px darkolivegreen solid;
+}
+.item-symbol4 {
+    grid-area: symbol4;
+    border: 1px darkolivegreen solid;
+}
+.item-symbol5 {
+    grid-area: symbol5;
+    border: 1px darkolivegreen solid;
+}
+.item-symbol6 {
+    grid-area: symbol6;
+    border: 1px darkolivegreen solid;
+}
+.item-d {
+    grid-area: footer;
+    border: 1px lawngreen solid;
+}
+.container {
+    border: 1px white solid;
+    display: grid;
+    grid-template-columns: 28.3% 28.3% 28.3% 15%;
+    grid-template-rows: auto;
+    grid-template-areas:
+            "main main main symbol1"
+            "main main main symbol2"
+            "main main main symbol3"
+            "main main main symbol4"
+            "main main main symbol5"
+            "footer footer footer symbol6";
+    height: 33.3333%;
+}
+
+@media (max-width: 1200px) {
+    .column {
+        flex: 20%;
+        max-width: 20%;
+    }
+}
+@media (max-width: 800px) {
+    .column {
+        flex: 25%;
+        max-width: 25%;
+    }
+}
+@media (max-width: 600px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
